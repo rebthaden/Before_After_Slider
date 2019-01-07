@@ -1,0 +1,81 @@
+#lp-slider { background-color: #f6f6f6; padding: 20px; }
+
+#lp-slider .contain {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+#lp-slider article { margin: auto; }
+#lp-slider figure {
+    margin: 20px auto;
+    max-width: 412px;
+}
+
+#lp-slider h2 {
+    color: #28708f;
+    font-family: Lato;
+    font-size: 45px;
+    text-transform: uppercase;
+    margin: 20px auto;
+}
+
+.ba-slider-wrapper {
+    margin: .5em auto;
+    position: relative;
+    -webkit-box-shadow: 0 3px 7px rgba(2, 3, 3, 0.35);
+    box-shadow: 0 3px 7px rgba(2, 3, 3, 0.35);
+    border: 4px solid #fff;
+}
+
+.ba-slider-wrapper .ba-slider { width: auto; position: relative; }
+
+.ba-slider-wrapper .ba-slider span {
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px -1px 2px 0 #000000;
+    box-shadow: 1px -1px 2px 0 #000000;
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: -3px;
+    left: -20px;
+    width: 4px;
+    z-index: 1100;
+}
+
+.ba-slider-wrapper .ba-slider img {
+    max-width: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    max-width: 400px;
+}
+
+.ba-slider-wrapper .ba-slider img:first-of-type { z-index: 210;}
+.ba-slider-wrapper .ui-slider { position: relative; }
+.ba-slider-wrapper .ui-slider .ui-slider-handle { position: absolute; }
+.slider-icon {
+    background: url('assets/images/handle.png');
+    background-repeat: no-repeat;
+    background-size: 46px;
+    display: block;
+    height: 31px;
+    position: absolute;
+    width: 46px;
+    z-index: 200;
+   left: 22px;
+}
+
+@media (max-width: 800px) {
+    #lp-slider .contain { display: block; }
+    .ba-slider-wrapper { text-align: center; }
+    .ba-slider-wrapper .ba-slider { margin-left: auto; margin-right: auto; }
+    .ba-slider-wrapper .ba-slider img { max-width: 100%; }
+    .ba-slider-wrapper .ui-slider { margin: 0 auto; }
+    .ba-slider-wrapper p { background-position: center top; padding-top: 75px; }
+    .ba-slider-wrapper:after { font-size: 75%; right: inherit;}
+}
+
+
+
+
